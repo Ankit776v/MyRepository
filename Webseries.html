@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./z.png">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <meta charset="UTF-8">
+    <script src="logic.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/string-similarity/umd/string-similarity.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap" rel="stylesheet">
+    <title>A-Z Movies</title>
+</head>
+<body>
+    <div class="header">
+        <button id="options" onclick="menushow()"><i class="fa-solid fa-bars"></i></button> 
+        <button id="close" onclick="closebar()"><i class="fa-solid fa-circle-xmark"></i></button>
+        <div class="menubar">
+            <li id="content">
+                <ul><a href="./Moviepage.html">Movies</a></ul>
+                <ul><a href="./Webseries.html">Webseries</a></ul>
+                <ul><a href="./Shortseries.html">Short Movies</a></ul>
+            </li>
+        </div>  
+        <a href="./index.html"><img src="./z.png" alt="logo" class="logo"></a>
+        <div class="searchbar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="search" onclick="searchshow()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        </button>
+    </div>
+    <div class="Seriesonly">
+        <p>Recently Added</p>
+    </div>
+    <div class="page">
+        <button id="pp" onclick="prevspage()">Prev page</button>
+        <button id="b1" onclick="seriescontent(0)">1</button>
+        <button id="b2" onclick="seriescontent(1)">2</button>
+        <button id="b3" onclick="seriescontent(2)">3</button>
+        <button id="b4"  onclick="seriescontent(3)">4</button>
+        <button id="b5"  onclick="seriescontent(4)">5</button>
+        <button id="b6"  onclick="seriescontent(5)">6</button>
+        <button id="b7"  onclick="seriescontent(6)">7</button>
+        <button id="b8"  onclick="seriescontent(7)">8</button>
+        <button id="b9"  onclick="pagecontent(8)">9</button>
+        <button id="b10"  onclick="pagecontent(9)">10</button>
+        <button id="b11"  onclick="pagecontent(10)">11</button>
+        <button id="b12"  onclick="pagecontent(11)">12</button>
+        <button id="b13"  onclick="pagecontent(12)">13</button>
+        <button id="b14"  onclick="pagecontent(13)">14</button>
+        <button id="b15"  onclick="pagecontent(14)">15</button>
+        <button id="b16"  onclick="pagecontent(15)">16</button>
+        <button id="np" onclick="nextspage()">Next Page</button>
+    </div> 
+    <div class="footer">
+       <img src="./A location for all Movies.png" alt="Banner">
+       <div class="base">
+        <li>How to Download</li>
+        <li>DMCA</li>
+        <li>Privacy Policy</li>
+        <li>Request Page</li>
+        <li>Contact Us</li>
+    </div>
+    </div>
+</body>
+</html>
